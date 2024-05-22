@@ -6,9 +6,9 @@ CREATE DATABASE worldcup;
 
 -- create table 'game' to store the games information
 CREATE TABLE games (
-    game_id integer NOT NULL identity(1,1) PRIMARY KEY,
+    game_id integer NOT NULL PRIMARY KEY,
     year integer NOT NULL,
-    round character varying(40) NOT NULL,
+    round varchar(40) NOT NULL,
     winner_id integer NOT NULL,
     opponent_id integer NOT NULL,
     winner_goals integer NOT NULL,
@@ -17,8 +17,8 @@ CREATE TABLE games (
 
 -- create table 'teams' to store the teams information includes winners and opponents
 CREATE TABLE teams (
-    team_id integer NOT NULL identity(1,1) PRIMARY KEY,
-    name character varying(40) NOT NULL
+    team_id integer NOT NULL PRIMARY KEY,
+    name varchar(40) NOT NULL
 );
 
 -- add unique constraint on team names
