@@ -6,7 +6,7 @@ CREATE DATABASE worldcup;
 
 -- create table 'game' to store the games information
 CREATE TABLE games (
-    game_id integer NOT NULL PRIMARY KEY,
+    game_id serial PRIMARY KEY,
     year integer NOT NULL,
     round varchar(40) NOT NULL,
     winner_id integer NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE games (
 
 -- create table 'teams' to store the teams information includes winners and opponents
 CREATE TABLE teams (
-    team_id integer NOT NULL PRIMARY KEY,
+    team_id serial PRIMARY KEY,
     name varchar(40) NOT NULL
 );
 
