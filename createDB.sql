@@ -1,8 +1,8 @@
 -- create database
-CREATE DATABASE worldcup
+CREATE DATABASE worldcup;
 
 -- connect to database
-USE worldcup
+\c worldcup;
 
 -- create table 'game' to store the games information
 CREATE TABLE games (
